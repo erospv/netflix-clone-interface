@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    background: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+    padding: 5px 40px 0 40px;
+    justify-content:space-between; 
+    align-items: center;  
+    z-index: 3;
+    transition: background ease-in 0.4s
+}
+
+header.background-black {
+    background-color: #141414;
+    transition: 0s
+}
+
+.svg-netflix-logo a svg {
+    fill: #e50914;
+    width: 8vw; 
+}
+
+.profile-icon {
+    border-radius: 3px;
+    width: 40px;
+}
+

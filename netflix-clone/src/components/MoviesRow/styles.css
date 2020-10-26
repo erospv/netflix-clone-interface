@@ -1,0 +1,84 @@
+.moviesRow {
+    margin-bottom: 2vw;
+}
+
+.moviesRow h2 {
+    margin: 0 4% 0 3%;
+    font-size: 24px;
+}
+
+.moviesRow-item {
+    display: inline-block;
+    width: 155px;
+    cursor: pointer;
+}
+
+.moviesRow-area {
+    overflow-x: hidden;
+    padding-left: 3%;
+}
+
+.moviesRow-list {
+    transition: margin ease-in 0.5s
+}
+
+.moviesRow-item img {
+    width: 100%;
+    transform: scale(0.9);
+    border-radius: 4px;
+    transition: all ease 0.2s;
+}
+
+.moviesRow-item img:hover {
+    transform: scale(1)
+}
+
+.moviesRow-left, 
+.moviesRow-right {
+    position: absolute;
+    width: 50px;
+    height: 230px;
+    background-color: rgba(20, 20, 20, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    cursor: pointer;
+    overflow: hidden;
+    opacity: 0;
+    transition: all ease 0.5s
+    
+}
+
+.moviesRow-left {
+    left: 0
+}
+
+.moviesRow-right {
+    right: 0
+}
+
+.arrow-icon:hover {
+    transform: scale(1.4);
+    transition: all ease 0.2s
+}
+
+.moviesRow:hover .moviesRow-right,
+.moviesRow:hover .moviesRow-left {
+    opacity: 1
+}
+
+@media (max-width:760px) {
+    .moviesRow-left,
+    .moviesRow-right {
+        opacity: 1;
+    }
+
+    .moviesRow-area {
+        padding-left: 8%;
+    }
+    .moviesRow h2 {
+        font-size: 16px;
+        padding-left: 6%
+    }
+}

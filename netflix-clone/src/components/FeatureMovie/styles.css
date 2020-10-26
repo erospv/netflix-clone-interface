@@ -1,0 +1,189 @@
+.featured {
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+}
+
+.featured-vertical {
+    width: inherit;
+    height:  inherit;
+    background: linear-gradient(to top, #141414, transparent 60%)
+}
+
+.featured-horizontal {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #141414 20%, transparent 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    padding-bottom: 150px;
+    padding-top: 70px;
+
+}
+
+.featured-name{
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.logo-original-serie {
+    display: flex;
+    align-items: center;
+}
+
+.svg-icon-n-logo {
+    height: 2rem;
+    margin-right: 0.4rem;
+    display: inline-block;
+    background-attachment: transparent;
+}
+
+.text-original-serie {
+    display: inline-block;
+    letter-spacing: 8px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #a3a3a3
+}
+
+.featured-info {
+    font-weight: 500;
+    margin-top: 15px;
+    color: #a3a3a3;
+    line-height: 18px;
+}
+
+.featured-info > :not(:last-child) {
+    border-right: 1px solid #a3a3a3;
+    margin-right: 9px;
+    padding-right: 11px;
+}
+
+.featured-rating {
+    color: #46d369
+}
+
+.featured-rating,
+.featured-released-year,
+.featured-seasons {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.featured-description {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 40%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.45)
+}
+
+.featured-buttons {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 28px;
+    display: flex;
+}
+
+.featured-watch-button,
+.featured-more-info-button {
+    display: flex;
+    align-items: center;
+    padding: 21px 33px;
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-right: 9px;
+    cursor: pointer;
+}
+
+.more-info-button-content {
+    display: flex;
+    align-items: center;
+}
+
+.more-info-icon-div {
+    margin-right: 8px;
+    display: flex;
+}
+
+.more-info-icon-img {
+    width: 22px;
+}
+
+.button-text {
+    font-weight: bold;
+    font-size: 18px;    
+}
+
+.featured-watch-button {
+    color: black;
+    background-color: white
+}
+.featured-more-info-button {
+    background-color: rgba(109,109,110,0.7);
+    color: rgba(255,255,255,0.75);
+}
+
+.featured-watch-button:hover {
+    background-color: rgba(255,255,255,0.75)
+}
+
+.featured-more-info-button:hover {
+    background-color: rgba(109,109,110,0.4);
+}
+
+.featured-genres {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.genres-label {
+    color: #a3a3a3;   
+}
+
+@media (max-width: 760px) {
+    .featured {
+        height: 80vh;
+    }
+
+    .featured-name {
+        font-size: 26px;
+    }
+
+    .svg-icon-n-logo {
+        height: 1.3rem;
+    }
+
+    .text-original-serie {
+        letter-spacing: 3px;
+        font-size: 9px;
+    }
+
+    .featured-rating,
+    .featured-released-year,
+    .featured-seasons {
+        font-size: 16px;
+    }
+
+    .featured-description {
+        font-size: 16px;
+        max-width: 60%;
+    }   
+
+    .button-text {
+        font-size: 14px;
+    }
+
+    .featured-genres {
+        font-size: 14px;
+    }
+}
+
+
