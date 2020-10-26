@@ -17,7 +17,7 @@ export default {
 				slug: "originals",
 				title: "Originais Netflix",
 				response: await basicFetch(
-					`/discover/tv/?with_networks=213&page=3&language=pt-BR&api_key=${apiKey}`
+					`/discover/tv/?with_networks=213&page=1&language=pt-BR&api_key=${apiKey}`
 				),
 			},
 			{
